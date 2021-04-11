@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+ <title>signup</title>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+</head>
+<body>  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="max-width: 30%;">
+        <img src="./images/logo.jpg" class="img-fluid">
+     </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="info.html" >info
+            </a>
+            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+  <h1>you can sign up here....</h1>
+  <div class="row g-3">
+    <div class="col-lg-4">
+      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+    </div>
+    <div class="col-lg-4">
+      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+    </div>
+  </div>
+  <form class="row g-4" onsubmit="return !!(phonecheck() & validates() & validatePassword() & confirmation());">
+    <div class="col-lg-4">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="emailidgiven">
+      <label for="emailid" id="errored"></label>
+    </div>
+        <div class="col-lg-4">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword"  >
+      <!-- <span id="StrengthDisp" class="badge displayBadge">Weak</span> -->
+       <label for="passwordcheck" id="pwderror"></label>
+      <meter max="4" id="password-strength-meter"></meter> 
+     <p id="password-strength-text"></p>
+</section> 
+    </div>
+        <div class="col-lg-4">
+      <label for="inputPassword4" class="form-label">Confirm Password</label>
+      <input type="password" class="form-control" id="confirmPassword4">
+      <label for="confrimpwd" id="confirmpwd1"></label>
+    </div>
+    <div class="col-4">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-lg-4">
+      <label for="inputAddress2" class="form-label">Phone Number</label>
+      <input type="text" class="form-control" id="phonenumber">
+      <label for="phonenumbervalid" id="nova"></label>
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>India</option>
+        <option>Sri Lanka</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+     <div class="col-4">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div> 
+    <div class="col-auto" class="sibut">
+      <button type="submit" class="btn btn-primary mb-3">Confirm</button>
+      
+    </div>
+  </form>
+<p class="padis"> <mark>Disclaimer:</mark>
+  Companies whose business models revolve around handling sensitive customer information find it incredibly important to establish trust with their users. A clear and comprehensive Privacy Policy agreement that tells users exactly what information the company collects and what it does with that information inspires confidence in a business. It gives users a sense of security knowing how much control they have over their personal data under the conditions they sign up for.
+</p>
+  <script src="/phone.js"></script>
+ </body>
+</html>

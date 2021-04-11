@@ -1,0 +1,137 @@
+.homep{
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: blue;
+  
+}
+.why{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blueviolet;
+    text-align: center;
+    font-style: italic;
+}
+/* *{
+    background-image: url(./images/backcover.jpg);
+} */
+img {
+    float: left;
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
+}
+.ktm{
+    text-align:left;
+    text-decoration: crimson;
+    background-color: cyan;
+}
+#navigation,.navbar .navbar-default{
+    background-image: url("/images/idk.jpg");
+  }
+  .alp{
+      text-align: center;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: cyan;
+  }
+  .idk{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: cyan;
+}
+.tvm{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: cyan;
+}
+.pta{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: cyan;
+}
+.alk{
+    text-align-last: right;
+}
+.container-fluids{ 
+     width: 100%;
+     position: absolute;
+     top: 0;
+     } 
+     .navbar{
+        position:absolute;
+        width:100%;
+        z-index:10;
+        max-width:100%;
+  }
+.sibut{
+    color: blue;
+    background-color: chartreuse;
+}
+.bg-img {
+    /* The image used */
+    background-image: url("/images/backcover.jpg");
+  
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  
+  /* Position the navbar container inside the image */
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+  }
+  
+  /* The navbar */
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(118, 109, 109);
+  }
+  
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .d-block w-100
+  {
+      width: 10px;;
+      height: 50px;
+      padding:30px;
+  }
+  .padis{
+      padding: 30px;
+      text-align: left;
+  }
+ .carousel-item{
+     padding:4%;
+    
+ }
+ .watn{
+     text-align: center;
+     color: blueviolet;
+     font-family: sans-serif;
+ }
+ .card{
+     background-color:goldenrod;
+ }
+ .displayBadge{
+    margin-top: 5%; 
+    display: none; 
+    text-align :center;
+}
